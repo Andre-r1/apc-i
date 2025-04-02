@@ -1,15 +1,31 @@
 #include <stdio.h>
 
 int main(){
+    char nome_produto[31];
+    int quantidade;
+    float preco;
+    float valor_total;
 
-    printf("==============================\n");
-    printf("      N O T A   L E G A L\n");
-    printf("Produto\t Qtd\t Valor\t Unit\n");
-    printf("Camisa\t %2f\t %f\n", 002, 39.99);
-    printf("Calca\t %i\t %f\n", 001, 89.90);
-    printf("Meia Social\t %2i\t %f\n", 003, 19.99);
-    printf("==============================\n");
-    printf("Total:\t %5f\t\n", 229.85);
+    printf("\nEntre com o nome do produto: ");
+    scanf("%[^\n]s", nome_produto);
+    getchar();
+
+    printf("Entre com a quantidade do produto: ");
+    scanf("%i", &quantidade);
+    getchar();
+
+    printf("Entre com o preco do produto: ");
+    scanf("%f", &preco);
+    getchar();
+
+    valor_total = preco * quantidade;
+
+    printf("\t\tNOTA LEGAL\n");
+    printf("Iten               Qtd   Preco       Valor\n");
+    printf("%-20s %03i %7.2f %7.2f\n", nome_produto, quantidade, preco, valor_total);
+    printf("TOTAL: %15.2f", valor_total);
+
+
 
 
     return 0;
