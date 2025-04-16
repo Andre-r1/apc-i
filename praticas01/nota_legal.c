@@ -25,7 +25,7 @@ int main(){
     printf("%-20s %03i %7.2f %7.2f\n", nome_produto, quantidade, preco, valor_total);
     printf("TOTAL: %15.2f", valor_total);
 
-
+    
 
 
     return 0;
