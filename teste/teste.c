@@ -13,3 +13,13 @@ int x = 10;
 }
     return 0;
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+int value = rand();
+printf("Random Value: %d\n", value);
+return 0;
+}
